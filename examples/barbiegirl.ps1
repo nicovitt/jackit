@@ -15,7 +15,7 @@ Function Invoke-BarbieGirl
     $IEComObject.visible = $False
     $IEComObject.navigate($VideoURL)
     Start-Sleep -s 5
-    $EndTime = (Get-Date).addseconds(90)
+    $EndTime = (Get-Date).addseconds(10)
     # ghetto way to do this but it basically presses volume up to raise volume in a loop for 90 seconds
     do {
        $WscriptObject = New-Object -com wscript.shell
