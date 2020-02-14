@@ -61,7 +61,7 @@ class MouseJack(object):
         self.devices = {}
         return
 
-    def scan(self, timeout=5.0, callback=None):
+    def scan(self, timeout=1.0, callback=None):
         self.radio.enter_promiscuous_mode()
         self.radio.set_channel(self.channels[self.channel_index])
         dwell_time = 0.1
@@ -121,7 +121,7 @@ class MouseJack(object):
 
             if value[0] == 0:
                 # hack to keep it on channel
-                last_ping = time.time() + 5.0
+                last_ping = time.time() + 1.0
                 payload = value[1:]
                 self._debug("ch: %02d addr: %s packet: %s" % (self.channels[self.channel_index], addr_string, self.to_display(payload)))
                 if callback:
