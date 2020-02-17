@@ -21,5 +21,5 @@ Function Invoke-BarbieGirl {
         $WscriptObject.SendKeys([char]175)
     }
     until ((Get-Date) -gt $EndTime)
-    $IEComObject.Quit();
+    # $IEComObject.Quit();
 } Invoke-BarbieGirl
