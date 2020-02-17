@@ -16,10 +16,10 @@ Function Invoke-BarbieGirl {
     Start-Sleep -s 5
     $EndTime = (Get-Date).addseconds(10)
     # ghetto way to do this but it basically presses volume up to raise volume in a loop for 10 seconds
-    # do {
-    #     $WscriptObject = New-Object -com wscript.shell
-    #     $WscriptObject.SendKeys([char]175)
-    # }
-    # until ((Get-Date) -gt $EndTime)
-    # $IEComObject.Quit();
+    do {
+        $WscriptObject = New-Object -com wscript.shell
+        $WscriptObject.SendKeys([char]175)
+    }
+    until ((Get-Date) -gt $EndTime)
+    $IEComObject.Quit();
 } Invoke-BarbieGirl
