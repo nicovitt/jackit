@@ -11,7 +11,7 @@ Function Invoke-BarbieGirl {
     Set-Speaker -Volume 50   
     #Create hidden IE Com Object
     $IEComObject = New-Object -com "InternetExplorer.Application"
-    $IEComObject.visible = $False
+    $IEComObject.visible = $True
     $IEComObject.navigate($VideoURL)
     Start-Sleep -s 5
     $EndTime = (Get-Date).addseconds(10)
