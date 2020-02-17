@@ -61,7 +61,7 @@ class MouseJack(object):
         self.devices = {}
         return
 
-    def scan(self, timeout=1.0, callback=None):
+    def scan(self, timeout=5.0, callback=None):
         self.radio.enter_promiscuous_mode()
         self.radio.set_channel(self.channels[self.channel_index])
         dwell_time = 0.1
